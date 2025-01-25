@@ -37,3 +37,10 @@ body {
     margin: 0; /* Ensures no extra spacing around the page */
     padding: 0; /* Removes any padding */
 }
+
+.child img {
+    max-width: 50%; /* Ensures the image doesn’t overflow the container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures no inline spacing below the image */
+    margin: 10px auto; /* Centers the image horizontally */
+}
