@@ -16,7 +16,7 @@
     flex: 1; /* Allows each child container to take up an equal share of the parent's available space */
     margin: 0 10px; /* Adds spacing between child containers */
     padding: 20px;
-    background-color: #fff;
+    background-color: #fefae0;
     border: 1px solid #ccc;
     border-radius: 8px;
     text-align: center; /* Centers text inside each child */
