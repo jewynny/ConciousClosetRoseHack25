@@ -1,0 +1,39 @@
+.parent {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Distribute child containers horizontally with space in between */
+    align-items: center; /* Vertically align child containers to the center */
+    width: 90%; /* Adjust width to take up most of the screen width */
+    height: 90vh; /* Adjust height to take up most of the viewport height */
+    background-color: #fefae0; /* Matches the background in your image */
+    padding: 20px;
+    margin: 0 auto; /* Center the container horizontally */
+    border: 2px solid #ddd; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+
+.child {
+    flex: 1; /* Allows each child container to take up an equal share of the parent's available space */
+    margin: 0 10px; /* Adds spacing between child containers */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center; /* Centers text inside each child */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column; 
+    height: 80%;
+}
+
+/* Optional: Add hover effect for child containers */
+.child:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: #fefae0; /* Replace this with your desired color */
+    margin: 0; /* Ensures no extra spacing around the page */
+    padding: 0; /* Removes any padding */
+}
