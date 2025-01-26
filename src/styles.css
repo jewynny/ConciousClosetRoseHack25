@@ -25,11 +25,13 @@
 }
 
 /* Optional: Add hover effect for child containers */
+/*
 .child:hover {
     background-color: #f0f0f0;
     transform: translateY(-5px);
     transition: all 0.3s ease;
 }
+*/
 
 body {
     background-color: #fefae0; /* Replace this with your desired color */
@@ -72,4 +74,11 @@ body {
     border-radius: 20px;
     cursor: pointer;
     height: 80px;
+}
+
+/* Hover effect */
+.button-grid button:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    transform: translateY(-5px); /* Slightly lifts the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
 }
