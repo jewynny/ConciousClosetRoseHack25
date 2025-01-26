@@ -215,10 +215,10 @@ body {
   .search-box {
     display: flex;
     align-items: center;
-    border: 2px solid #ccc;
+    border: 1px solid black;
     border-radius: 30px;
-    padding: 10px 20px;
-    background-color: #fff;
+    padding: 10px 50px;
+    background-color: #D6CCC2;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
