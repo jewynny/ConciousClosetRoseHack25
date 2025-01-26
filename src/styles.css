@@ -86,7 +86,6 @@ header{
     margin-bottom: -60px;
 }
 
-<<<<<<< HEAD
 .circle-wrapper {
     position: relative;
 }
@@ -107,7 +106,6 @@ header{
     width: 600px; /* Initial size */
     height: 800px; /* Initial size */
     transition: font-size 0.2s ease, width 0.2s ease, height 0.2s ease; /* Smooth resizing */
-=======
 .main-content {
     font-family: 'Gloock', sans-serif;
     margin:0;
@@ -125,8 +123,6 @@ header{
     height: auto; 
 }
 
-
-
   .parent {
     display: flex; /* Enables Flexbox */
     justify-content: space-between; /* Distribute child containers horizontally with space in between */
@@ -137,8 +133,6 @@ header{
     padding: 20px;
     margin: 0 auto; /* Center the container horizontally */
     border: none;
-}
-
 
 .child {
     flex: 1; /* Allows each child container to take up an equal share of the parent's available space */
@@ -153,7 +147,6 @@ header{
     height: 80%;
 }
 
-/* Optional: Add hover effect for child containers */
 .child:hover {
     background-color: #f0f0f0;
     transform: translateY(-5px);
@@ -201,5 +194,4 @@ body {
     border-radius: 20px;
     cursor: pointer;
     height: 80px;
->>>>>>> c91edb8945a7cf2319d97989f474939284f8c579
 }
