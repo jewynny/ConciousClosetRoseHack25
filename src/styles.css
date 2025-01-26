@@ -106,6 +106,7 @@ header{
     width: 600px; /* Initial size */
     height: 800px; /* Initial size */
     transition: font-size 0.2s ease, width 0.2s ease, height 0.2s ease; /* Smooth resizing */
+} 
 .main-content {
     font-family: 'Gloock', sans-serif;
     margin:0;
@@ -123,6 +124,7 @@ header{
     height: auto; 
 }
 
+
   .parent {
     display: flex; /* Enables Flexbox */
     justify-content: space-between; /* Distribute child containers horizontally with space in between */
@@ -133,6 +135,7 @@ header{
     padding: 20px;
     margin: 0 auto; /* Center the container horizontally */
     border: none;
+}
 
 .child {
     flex: 1; /* Allows each child container to take up an equal share of the parent's available space */
@@ -195,3 +198,52 @@ body {
     cursor: pointer;
     height: 80px;
 }
+
+/*Search Bar*/
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+  .search-container p {
+    font-size: 1.2rem;
+    margin-top: -200px;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-box input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .search-box button:hover {
+    text-decoration: underline;
+  }
+
+  .brand {
+    font-size: 2rem;
+    font-weight: bold;
+  }
