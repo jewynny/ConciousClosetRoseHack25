@@ -247,3 +247,29 @@ body {
     font-size: 2rem;
     font-weight: bold;
   }
+
+  .button2 {
+    display: inline-block;
+    padding: 4px 90px;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: #D6CCC2;
+    transition:background-color 0.3s ease;
+    font-family: 'Gloock'
+}
+.button2:hover{
+    background-color: black;
+    color:#f5ebe0;
+    animation: bounce 1.0s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
