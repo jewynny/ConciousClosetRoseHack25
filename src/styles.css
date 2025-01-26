@@ -1,10 +1,20 @@
+h1 {
+    font-size: 4rem;
+    font-weight: 100px;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    color: #333; /* Optional: Change text color */
+    margin-left: 70px;
+    margin-bottom: -30px;
+}
+
 .parent {
     display: flex; /* Enables Flexbox */
     justify-content: space-between; /* Distribute child containers horizontally with space in between */
     align-items: center; /* Vertically align child containers to the center */
     width: 90%; /* Adjust width to take up most of the screen width */
     height: 90vh; /* Adjust height to take up most of the viewport height */
-    background-color: #fefae0; /* Matches the background in your image */
+    background-color: #f5ebe0; /* Matches the background in your image */
     padding: 20px;
     margin: 0 auto; /* Center the container horizontally */
     border: none;
@@ -15,7 +25,7 @@
     flex: 1; /* Allows each child container to take up an equal share of the parent's available space */
     margin: 0 10px; /* Adds spacing between child containers */
     padding: 20px;
-    background-color: #fffbed;
+    background-color: #ffdcdc;
     border: 1px solid #ccc;
     border-radius: 8px;
     text-align: center; /* Centers text inside each child */
@@ -34,7 +44,7 @@
 */
 
 body {
-    background-color: #fefae0; /* Replace this with your desired color */
+    background-color: #f5ebe0; /* Replace this with your desired color */
     margin: 0; /* Ensures no extra spacing around the page */
     padding: 0; /* Removes any padding */
 }
@@ -47,7 +57,7 @@ body {
 }
 
 .search-bar input {
-    width: 100%; /* Makes the input span the full width of its container */
+    width: 90%; /* Makes the input span the full width of its container */
     padding: 10px; /* Adds padding inside the input field */
     border: none; /* Removes the border */
     border-radius: 25px; /* Adds rounded corners */
