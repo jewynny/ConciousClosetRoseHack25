@@ -32,6 +32,7 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     flex-direction: column; 
     height: 80%;
+    position: relative; /* Establish positioning context for absolute elements */
 }
 
 /* Optional: Add hover effect for child containers */
@@ -54,7 +55,33 @@ body {
     height: auto; /* Maintains the aspect ratio */
     display: block; /* Ensures no inline spacing below the image */
     margin: 10px auto; /* Centers the image horizontally */
+    display: block; /* Prevent inline spacing issues */
 }
+
+.ladyimages {
+    position: relative; /* Establishes a relative positioning context */
+    width: fit-content; /* Ensures the container fits the images */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Lady image */
+.lady-image {
+    position: relative; /* Default position of the lady */
+    z-index: 1; /* Ensures the lady image appears below the bag */
+    width: auto; /* Adjust as needed */
+    height: 300px; /* Set height to keep proportions */
+}
+
+/* Bag image */
+.bag-image {
+    position: absolute; /* Position the bag relative to the parent */
+    z-index: 2; /* Ensures the bag is on top of the lady */
+    width: auto; /* Adjust as needed */
+    height: 100px; /* Adjust height for a proportionate size */
+    top: 70%; /* Move the bag vertically into the correct position */
+    left: 60%; /* Move the bag horizontally into the correct position */
+}
+
 
 .search-bar input {
     width: 90%; /* Makes the input span the full width of its container */
