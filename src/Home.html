@@ -8,28 +8,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">  
+    <link rel="icon" type="image/x-icon" href="favicon.ICO">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="nav-button">Home</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <div class="above-text"> <p style = "font-size: 30px"> welcome to </p> </div>
-        <h1>ConsciousCloset</h1>
-        <div class="begin-button"><p style="font-size: 15px"> click to begin </p> </div>
-    </header>
-
-    
-    <div class="main-content">
-        <h1 class="main-heading">Let your conscious run</h1>
-        <p class="sub-heading">Find ethical products with Ethical Picks where we find products from ethical companies!</p>
-        <div class="buttons">
-            <a href="products.html" class="round-btn">Products</a>
-            <button class="round-btn">Learn More</button>
+    <div class="fadeIn">
+        <img src="favicon.ICO" alt="Logo" class="logo">
+        <header>
+            <div class="above-text"> <p style = "font-size: 30px"> welcome to </p> </div>
+            <h1>ConsciousCloset</h1>
+            <div class="begin-button"><p style="font-size: 15px"> click to begin </p> </div>
+        </header>
+        <div class="main-content"> 
+            <p styles = "font-size:20px">Let Your Conscious Run </p>
         </div>
     </div>
-</body>
+
+
+    <div class = "circle-wrapper"> 
+        <div class="circle"> 
+            <p style="font-family: Gloock;"> </style> your one stop shop to ethically shopping </p> </div>
+    </div>
+
+    <script>
+        const circle = document.querySelector('.circle');
+    
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercentage = scrollTop / maxHeight;
+    
+            // Scale the circle size (adjust max size)
+            const maxSize = 600; // Maximum circle size in px
+            const minSize = 100; // Minimum circle size in px
+            const size = minSize + scrollPercentage * (maxSize - minSize);
+
+            const fontsize = size/5;
+    
+            // Adjust the top position to move the circle down
+            const viewportHeight = window.innerHeight;
+            const startTop = viewportHeight * 0.5; // Starts vertically centered
+            const maxMove = viewportHeight * 0.1; // Max distance the circle can move down
+            const top = startTop + scrollPercentage * maxMove;
+    
+            // Apply the size and position
+            circle.style.width = `${size}px`;
+            circle.style.height = `${size}px`;
+            circle.style.fontSize = `${1 + scrollPercentage * 2}rem`;
+            circle.style.top = `${top}px`; // Dynamically adjust top position
+        });
+    </script>
+    
+
+
+    </body>
 </html>
