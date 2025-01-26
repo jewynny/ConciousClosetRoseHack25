@@ -1,0 +1,75 @@
+.parent {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Distribute child containers horizontally with space in between */
+    align-items: center; /* Vertically align child containers to the center */
+    width: 90%; /* Adjust width to take up most of the screen width */
+    height: 90vh; /* Adjust height to take up most of the viewport height */
+    background-color: #fefae0; /* Matches the background in your image */
+    padding: 20px;
+    margin: 0 auto; /* Center the container horizontally */
+    border: none;
+}
+
+
+.child {
+    flex: 1; /* Allows each child container to take up an equal share of the parent's available space */
+    margin: 0 10px; /* Adds spacing between child containers */
+    padding: 20px;
+    background-color: #fffbed;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center; /* Centers text inside each child */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-direction: column; 
+    height: 80%;
+}
+
+/* Optional: Add hover effect for child containers */
+.child:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: #fefae0; /* Replace this with your desired color */
+    margin: 0; /* Ensures no extra spacing around the page */
+    padding: 0; /* Removes any padding */
+}
+
+.child img {
+    max-width: 50%; /* Ensures the image doesn’t overflow the container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures no inline spacing below the image */
+    margin: 10px auto; /* Centers the image horizontally */
+}
+
+.search-bar input {
+    width: 100%; /* Makes the input span the full width of its container */
+    padding: 10px; /* Adds padding inside the input field */
+    border: none; /* Removes the border */
+    border-radius: 25px; /* Adds rounded corners */
+    background-color: #f9f9f9; /* Optional: Light background color */
+    font-size: 1rem; /* Adjusts font size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    margin-bottom: 50px;
+}
+
+.button-grid {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between buttons */
+    width: 100%; /* Optional: Ensures proper layout */
+    max-width: 600px; /* Optional: Restricts width */
+    max-height: 400px;
+}
+
+.button-grid button {
+    margin: 0; /* Reset any default browser margins */
+    padding: 20px; /* Ensures adequate button size */
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 80px;
+}
